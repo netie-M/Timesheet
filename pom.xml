@@ -44,6 +44,12 @@
 		<dependency>
 			<groupId>quark-platform</groupId>
 			<artifactId>quark-platform-ut</artifactId>
+			<exclusions>
+				<exclusion>
+					<groupId>org.mongodb</groupId>
+					<artifactId>mongo-java-driver</artifactId>
+				</exclusion>
+			</exclusions>
 			<scope>test</scope>
 		</dependency>
 		<dependency>
