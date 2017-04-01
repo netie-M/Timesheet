@@ -59,6 +59,10 @@
 					<groupId>javax.persistence</groupId>
 					<artifactId>persistence-api</artifactId>
 				</exclusion>
+				<exclusion>
+					<groupId>com.oracle</groupId>
+  					<artifactId>ojdbc6</artifactId>
+				</exclusion>
 			</exclusions>
 		</dependency>
 		<dependency>
