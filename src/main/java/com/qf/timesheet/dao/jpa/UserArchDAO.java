@@ -2,6 +2,7 @@ package com.qf.timesheet.dao.jpa;
 
 import java.util.List;
 
+import org.apache.commons.lang3.StringUtils;
 import org.springframework.data.jpa.repository.JpaSpecificationExecutor;
 import org.springframework.data.repository.PagingAndSortingRepository;
 import org.springframework.data.repository.query.Param;
@@ -17,7 +18,8 @@ public interface UserArchDAO extends
 		JpaSpecificationExecutor<UserArch> {
 
 	UserArch findByUserId(@Param("userId") String userId);
-	
+
 	List<UserArch> findByUserStatus(@Param("userStatus") String userStatus);
 
+	
 }

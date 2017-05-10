@@ -28,3 +28,4 @@ public class TimesheetApp extends SpringBootServletInitializer{
         return application.sources(TimesheetApp.class);
     }
 }
+// @EnableWebMvc 可自定义控制WebMVC   参考WebMvcAutoConfiguration
